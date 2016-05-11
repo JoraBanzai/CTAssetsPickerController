@@ -24,7 +24,7 @@
  
  */
 
-#import <PureLayout/PureLayout.h>
+#import "PureLayout.h"
 #import "CTAssetThumbnailOverlay.h"
 #import "UIImage+CTAssetsPickerController.h"
 #import "PHAsset+CTAssetsPickerController.h"
@@ -61,7 +61,7 @@
 }
 
 
-#pragma markt - Setup
+#pragma mark - Setup
 
 - (void)setupViews
 {
@@ -108,7 +108,7 @@
 }
 
 
-#pragma - Bind asset and duration
+#pragma mark - Bind asset and duration
 
 - (void)bind:(PHAsset *)asset duration:(NSString *)duration;
 {
@@ -136,7 +136,7 @@
 }
 
 
-#pragma - Bind asset collection
+#pragma mark - Bind asset collection
 
 - (void)bind:(PHAssetCollection *)assetCollection;
 {

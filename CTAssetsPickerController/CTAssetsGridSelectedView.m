@@ -24,7 +24,7 @@
  
  */
 
-#import <PureLayout/PureLayout.h>
+#import "PureLayout.h"
 #import "CTAssetsPickerDefines.h"
 #import "CTAssetsGridSelectedView.h"
 #import "CTAssetCheckmark.h"

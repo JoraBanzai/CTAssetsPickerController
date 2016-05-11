@@ -55,12 +55,12 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    
     if ( [self respondsToSelector:@selector(interactivePopGestureRecognizer)] && animated == YES )
     {
         self.interactivePopGestureRecognizer.enabled = NO;
     }
-    
+	
+	viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:NULL action:NULL];
     [super pushViewController:viewController animated:animated];
     
 }

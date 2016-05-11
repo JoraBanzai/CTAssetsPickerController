@@ -25,7 +25,7 @@
  */
 
 
-#import <PureLayout/PureLayout.h>
+#import "PureLayout.h"
 #import "CTAssetsPickerController.h"
 #import "CTAssetItemViewController.h"
 #import "CTAssetScrollView.h"

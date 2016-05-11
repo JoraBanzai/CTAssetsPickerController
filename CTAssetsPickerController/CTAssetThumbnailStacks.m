@@ -24,7 +24,7 @@
  
  */
 
-#import <PureLayout/PureLayout.h>
+#import "PureLayout.h"
 #import "CTAssetsPickerDefines.h"
 #import "CTAssetThumbnailStacks.h"
 #import "CTAssetThumbnailView.h"
@@ -81,7 +81,7 @@
 }
 
 
-#pragma markt - Setters
+#pragma mark - Setters
 
 - (void)setThumbnailSize:(CGSize)thumbnailSize
 {

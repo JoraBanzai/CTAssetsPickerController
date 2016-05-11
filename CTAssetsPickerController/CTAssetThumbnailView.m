@@ -24,7 +24,7 @@
  
  */
 
-#import <PureLayout/PureLayout.h>
+#import "PureLayout.h"
 #import "CTAssetsPickerDefines.h"
 #import "CTAssetThumbnailView.h"
 #import "CTAssetThumbnailOverlay.h"
@@ -62,7 +62,7 @@
     return self;
 }
 
-#pragma markt - Setup
+#pragma mark - Setup
 
 - (void)setupViews
 {
@@ -82,7 +82,7 @@
 }
 
 
-#pragma markt - Setters
+#pragma mark - Setters
 
 - (void)setBackgroundImage:(UIImage *)backgroundImage
 {
@@ -91,7 +91,7 @@
 }
 
 
-#pragma markt - Override set bounds
+#pragma mark - Override set bounds
 
 -(void)setBounds:(CGRect)bounds
 {
@@ -117,7 +117,7 @@
     [super updateConstraints];
 }
 
-#pragma - Bind asset and image
+#pragma mark - Bind asset and image
 
 - (void)bind:(UIImage *)image asset:(PHAsset *)asset;
 {
@@ -158,7 +158,7 @@
 }
 
 
-#pragma - Bind asset collection and image
+#pragma mark - Bind asset collection and image
 
 - (void)bind:(UIImage *)image assetCollection:(PHAssetCollection *)assetCollection;
 {
