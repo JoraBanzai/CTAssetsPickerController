@@ -217,7 +217,7 @@
 - (PHImageRequestOptions *)imageRequestOptions
 {
     PHImageRequestOptions *options  = [PHImageRequestOptions new];
-    options.networkAccessAllowed    = YES;
+    options.networkAccessAllowed    = NO;
     options.progressHandler         = ^(double progress, NSError *error, BOOL *stop, NSDictionary *info) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.scrollView setProgress:progress];
@@ -256,7 +256,7 @@
 - (PHVideoRequestOptions *)videoRequestOptions
 {
     PHVideoRequestOptions *options  = [PHVideoRequestOptions new];
-    options.networkAccessAllowed    = YES;
+    options.networkAccessAllowed    = NO;
     options.progressHandler         = ^(double progress, NSError *error, BOOL *stop, NSDictionary *info) {
         dispatch_async(dispatch_get_main_queue(), ^{
             //do nothing
